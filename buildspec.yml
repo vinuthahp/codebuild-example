@@ -1,7 +1,9 @@
 version: 0.2
+
 phases:
- install:
-   commands:
+  install:
+    runtime-versions:
+        php: 7.3
      - |
          export DEBIAN_FRONTEND=noninteractive
 
