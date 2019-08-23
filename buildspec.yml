@@ -6,9 +6,9 @@ phases:
         php: 7.3
   build:
     commands:
-      - composer install --no-interaction --prefer-dist \
-    && ./vendor/bin/parallel-lint src tests \
-    && ./vendor/bin/phpunit --verbose --no-coverage \
+      - composer install --no-interaction --prefer-dist 
+    && ./vendor/bin/parallel-lint src tests 
+    && ./vendor/bin/phpunit --verbose --no-coverage 
     && ./vendor/bin/phpcs src tests --standard=psr2 -sp
 artifacts:
   files:
